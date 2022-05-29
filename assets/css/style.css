@@ -172,14 +172,14 @@ h3{
   display: none;
 }
 .card{
-  background: white;
+  background: whitesmoke;
   position: relative;
   width: 100vw;
-  height: 168vw;
+  height: 158vw;
   z-index: 9;
   position: absolute;
   left: -100vw;
-  top: 35vw;
+  top: 34.5vw;
   transition: .3s;
 }
 .texto-card{
@@ -230,7 +230,7 @@ h3{
   display: block;
   position: absolute;
   right: 7vw;
-  top: 4vw;
+  top: 6vw;
   color: white;
   font-weight: 500;
   z-index: 9;
@@ -248,11 +248,11 @@ h3{
   object-fit: cover;
   object-position: center;
   width: 90vw;
-  height: 90vw;
+  height: 100vw;
   position: relative;
   margin: auto;
   display: block;
-  top: 2vw;
+  top: 5vw;
   border-radius: 2vw;
 }
 .slide-destaques{
@@ -275,9 +275,9 @@ h3{
   
 }
 .destaques{
-  background: red;
+  background: white;
   width: 80vw;
-  height: 60vw;
+  height: 70vw;
   position: relative;
   display: block;
 }
@@ -289,16 +289,16 @@ h3{
 #bloco-horario{
   background: #444;
   width: 100vw;
-  height: 50vw;
+  height: 40vw;
 }
 .texto-hora{
   border: solid lightpink .5vw;
   padding: 4vw;
   height: vw;
-  width: 80vw;
+  width: 82vw;
   text-align: center;
-  line-height: 10vw;
-  font-size: 1.2rem;
+  line-height: 7.5vw;
+  font-size: 1rem;
   color: white;
   font-weight: 300;
 }
