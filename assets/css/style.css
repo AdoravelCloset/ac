@@ -1,1 +1,346 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'roboto';
+  color: #444;
+}
+.cabecalho{
+  background: whitesmoke;
+  width: 100vw;
+  height: 60vw;
+  position: relative;
+  margin-top: 0;
+  transition: .1s;
+}
+.banner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: white;
+}
+.img-banner{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+h1{
+  position: absolute;
+  margin: auto;
+  background: ;
+  right: 0;
+  top: 20vw;
+  font-family: ;
+  font-size: 3.8rem;
+  width: ;
+  color: white;
+  font-weight: 900;
+  z-index: 9;
+  text-shadow: 1vw 1vw 3vw whit;
+  opacity: .5;
+}
+h2{
+  background: red;
+  position: absolute;
+  width: ;
+  font-size: 1rem;
+  left: 37.2vw;
+  top: 48vw;
+  color: lightpink;
+  font-weight: 300;
+  letter-spacing: 1vw;
+  font-weight: 900;
+}
+.logo{
+  background: white;
+  position: relative;
+  margin: ;
+  width: 30vw;
+  height: 30vw;
+  left: 3vw;
+  top: 3vw;
+  border-radius: 100%;
+  box-shadow: .5vw .5vw 3vw lightgrey;
+  animation-name: animalogo;
+  animation-duration: 3s;
+  z-index: 9;
+  transform: rotate(-20deg)
+}
+@keyframes animalogo{
+  25%{
+    
+  }
+  50%{
+    
+  }
+  75%{
+    
+  }
+  100%{
+    
+  }
+}
+.img-logo{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+#lab-menu{
+  background: #444;
+  width: 8vw;
+  height: 8vw;
+  display: block;
+  position: absolute;
+  right: 5vw;
+  top: 2vw;
+  border-radius: 1vw;
+  z-index: 9;
+  border: .4vw solid white;
+}
+.menu{
+  background: white;
+  width: 40vw;
+  height: 10vw;
+  position: absolute;
+  right: 15vw;
+  top: 1.5vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-rede{
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  position: relative;
+  top: 1vw;
+  border-radius: 100%;
+  background: whitesmoke;
+  box-shadow: 1vw 1vw 3vw rgba(0, 0, 0, .5);
+}
+#check-menu{
+  display: none;
+}
+#check-menu:checked~.cabecalho{
+  transition: .1s;
+  margin-top: 13vw;
+}
+
+main{
+  background: white;
+  width: 100vw;
+  height: vw;
+  position: relative;
+}
+h3{
+  padding-top: 3vw;
+  padding-left: 5vw;
+  padding-bottom: 1vw;
+  background: white;
+  border-bottom: solid .5vw lightpink;
+  width: 90vw;
+}
+.bloco{
+  background: white;
+  width: 100vw;
+  height: vw;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+#bloco1{
+  height: 25vw;
+}
+.lab-rad{
+  background: white;
+  display: block;
+  width: 19vw;
+  position: relative;
+  height: 18vw;
+  border-radius: 2vw;
+  box-shadow: .5vw .5vw 3vw rgba(0,0,0,.3);
+}
+.titulo-categ{
+  position: relative;
+  top: 15vw;
+  font-weight: 500;
+  font-size: 4vw;
+  text-align: center;
+}
+#rad1,#rad2,#rad3,#rad4{
+  display: none;
+}
+.card{
+  background: whitesmoke;
+  position: relative;
+  width: 100vw;
+  height: 158vw;
+  z-index: 9;
+  position: absolute;
+  left: -100vw;
+  top: 34.5vw;
+  transition: .3s;
+}
+.texto-card{
+  background: pink;
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  padding: 5vw;
+}
+.link-card{
+  background: #444;
+  color: white;
+  display: block;
+  padding: 2vw;
+  position: relative;
+  top: 2vw;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+#rad1:checked~#card1{
+  transition: .3s;
+  left: 0;
+  background: ;
+}
+#rad2:checked~#card2{
+  transition: .3s;
+  left: 0;
+  background: ;
+}
+#rad3:checked~#card3{
+  transition: .3s;
+  left: 0;
+  background: ;
+}
+#rad4:checked~#card4{
+  transition: .3s;
+  left: 0;
+}
+
+.lab-fechar{
+  background: #444;
+  text-align: center;
+  line-height: 8vw;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  right: 7vw;
+  top: 7vw;
+  color: white;
+  font-weight: 500;
+  z-index: 9;
+}
+.img-lab{
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+.img-categ{
+  background: whitesmoke;
+  object-fit: cover;
+  object-position: center;
+  width: 90vw;
+  height: 100vw;
+  position: relative;
+  margin: auto;
+  display: block;
+  top: 5vw;
+  border-radius: 2vw;
+}
+.slide-destaques{
+  background: whitesmoke;
+  width: 100vw;
+  height: 70vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+#fechar-card{
+  display: none;
+}
+.iframe-dest{
+  background: white;
+  width: 100vw;
+  height: 70vw;
+  margin: auto;
+  position: relative;
+  
+}
+.destaques{
+  background: white;
+  width: 80vw;
+  height: 70vw;
+  position: relative;
+  display: block;
+}
+.card-destaques{
+  background: #444;
+  width: 80vw;
+  height: 50vw;
+}
+#bloco-horario{
+  background: #444;
+  width: 100vw;
+  height: 40vw;
+}
+.texto-hora{
+  border: solid lightpink .5vw;
+  padding: 4vw;
+  height: vw;
+  width: 82vw;
+  text-align: center;
+  line-height: 7.5vw;
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+}
+#bloco-local{
+  height: 70vw;
+  background: #444;
+  border-top: solid #444 1vw;
+}
+.iframe-local{
+  width: 98vw;
+  height: 70vw;
+  margin: auto;
+}
+.rodape{
+  background: #444;
+  width: 100vw;
+  height: 30vw;
+  position: relative;
+}
+.menu-rodape{
+  background: transparent;
+  width: 40vw;
+  height: 10vw;
+  position: relative;
+  margin: auto;
+  top: 10vw;
+  display: flex;
+  justify-content: space-around;
+}
+.img-icone{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  
+}
+.copy{
+  background: transparent;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 15vw;
+  margin: auto;
+  font-size: 3vw;
+}
 
