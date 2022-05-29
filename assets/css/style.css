@@ -3,7 +3,7 @@ body{
   padding: 0;
   font-size: 1rem;
   font-family: 'roboto';
-  color: #444;
+  user-select: none;
 }
 .cabecalho{
   background: whitesmoke;
