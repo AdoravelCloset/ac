@@ -11,22 +11,24 @@
     margin: 0;
     padding: 0;
     font-family: 'roboto';
-    user-select: nome;
+    user-select: none;
+    background: ;
   }
       .destaques{
-        background: white;
+        background: transparent;
         width: 350vw;
-        height: 70vw;
+        height: 100vw;
         position: relative;
         display: flex;
         justify-content: space-around;
       }
       .card-destaques{
-        background: #444;
+        background: pink;
         width: 78vw;
         height: 68vw;
         position: relative;
         border-radius: 2vw;
+        top: 25vw;
       }
       .img-destaques{
         background: white;
@@ -49,7 +51,7 @@
         font-size: 1.5rem;
         padding-left: 2vw;
         top: 35vw;
-        color: lightpink;
+        color: white;
       }
       .preco{
         background: transparent;
@@ -65,7 +67,7 @@
         font-weight: 900;
       }
       .link-pedir{
-        background: lightpink;
+        background: #444;
         display: block;
         padding: 1vw;
         width: 38vw;
@@ -80,6 +82,17 @@
         color: white;
         border-radius: 1vw;
       }
+      #h3-dest{
+       padding-top: 3vw;
+  padding-left: 0;
+  padding-bottom: 1vw;
+  background: transparent;
+  border-bottom: solid .5vw lightpink;
+  width: 92vw;
+  color: white;
+  position: fixed;
+  left: 4vw;
+      }
   </style>
   
   <title></title>
@@ -87,6 +100,7 @@
 
 <body>
   <section class="destaques">
+    <h3 id="h3-dest">Destaques e Promoções</h3>
     <div class="card-destaques">
       <img class="img-destaques" src="../img/img4.png" alt="" />
       <p class="nome-produto">Nome do produto</p>
