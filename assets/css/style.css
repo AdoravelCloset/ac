@@ -1,14 +1,15 @@
 body{
   margin: 0;
   padding: 0;
-  font-size: 1rem;
+  font-size: 5vw;
   font-family: 'roboto';
   user-select: none;
+  background: #444;
 }
 .cabecalho{
-  background: whitesmoke;
+  background: transparent;
   width: 100vw;
-  height: 60vw;
+  height: 90vw;
   position: relative;
   margin-top: 0;
   transition: .1s;
@@ -30,10 +31,10 @@ h1{
   position: absolute;
   margin: auto;
   background: ;
-  right: 0;
-  top: 20vw;
+  right: 5vw;
+  top: 40vw;
   font-family: ;
-  font-size: 3.8rem;
+  font-size: 21vw;
   width: ;
   color: white;
   font-weight: 900;
@@ -57,8 +58,8 @@ h2{
   background: white;
   position: relative;
   margin: ;
-  width: 30vw;
-  height: 30vw;
+  width: 40vw;
+  height: 40vw;
   left: 3vw;
   top: 3vw;
   border-radius: 100%;
@@ -100,7 +101,7 @@ h2{
   border: .4vw solid white;
 }
 .menu{
-  background: white;
+  background: transparent;
   width: 40vw;
   height: 10vw;
   position: absolute;
@@ -128,21 +129,23 @@ h2{
 }
 
 main{
-  background: white;
+  background: transparent;
   width: 100vw;
   height: vw;
   position: relative;
 }
 h3{
   padding-top: 3vw;
-  padding-left: 5vw;
+  padding-left: 0;
   padding-bottom: 1vw;
-  background: white;
+  background: transparent;
   border-bottom: solid .5vw lightpink;
-  width: 90vw;
+  width: 92vw;
+  color: white;
+  position: absolute;
 }
 .bloco{
-  background: white;
+  background: transparent;
   width: 100vw;
   height: vw;
   display: flex;
@@ -150,7 +153,11 @@ h3{
   
 }
 #bloco1{
-  height: 25vw;
+  height: 45vw;
+  background: ;
+}
+#bloco2{
+  height: 100vw;
 }
 .lab-rad{
   background: white;
@@ -160,6 +167,7 @@ h3{
   height: 18vw;
   border-radius: 2vw;
   box-shadow: .5vw .5vw 3vw rgba(0,0,0,.3);
+  top: 21vw;
 }
 .titulo-categ{
   position: relative;
@@ -167,6 +175,7 @@ h3{
   font-weight: 500;
   font-size: 4vw;
   text-align: center;
+  color: lightpink;
 }
 #rad1,#rad2,#rad3,#rad4{
   display: none;
@@ -175,11 +184,11 @@ h3{
   background: whitesmoke;
   position: relative;
   width: 100vw;
-  height: 158vw;
+  height: 150vw;
   z-index: 9;
   position: absolute;
   left: -100vw;
-  top: 34.5vw;
+  top: 40vw;
   transition: .3s;
 }
 .texto-card{
@@ -256,9 +265,9 @@ h3{
   border-radius: 2vw;
 }
 .slide-destaques{
-  background: whitesmoke;
+  background: ;
   width: 100vw;
-  height: 70vw;
+  height: 90vw;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -267,9 +276,9 @@ h3{
   display: none;
 }
 .iframe-dest{
-  background: white;
+  background: transparent;
   width: 100vw;
-  height: 70vw;
+  height: 100vw;
   margin: auto;
   position: relative;
   
@@ -277,7 +286,7 @@ h3{
 .destaques{
   background: white;
   width: 80vw;
-  height: 70vw;
+  height: 100vw;
   position: relative;
   display: block;
 }
@@ -289,21 +298,23 @@ h3{
 #bloco-horario{
   background: #444;
   width: 100vw;
-  height: 40vw;
+  height: 60vw;
 }
 .texto-hora{
   border: solid lightpink .5vw;
   padding: 4vw;
-  height: vw;
+  height: 25vw;
   width: 82vw;
   text-align: center;
-  line-height: 7.5vw;
+  line-height: 8vw;
   font-size: 1rem;
   color: white;
   font-weight: 300;
+  position: relative;
+  top: 18vw;
 }
 #bloco-local{
-  height: 70vw;
+  height: 92vw;
   background: #444;
   border-top: solid #444 1vw;
 }
@@ -311,6 +322,8 @@ h3{
   width: 98vw;
   height: 70vw;
   margin: auto;
+  position: relative;
+  top: 11vw;
 }
 .rodape{
   background: #444;
@@ -343,4 +356,3 @@ h3{
   margin: auto;
   font-size: 3vw;
 }
-
