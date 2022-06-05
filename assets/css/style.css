@@ -5,9 +5,10 @@ body{
   font-family: 'roboto';
   user-select: none;
   background: white;
+  font-family: arial;
 }
 .cabecalho{
-  background: transparent;
+  background: white;
   width: 100vw;
   height: 90vw;
   position: relative;
@@ -20,6 +21,8 @@ body{
   height: 100%;
   top: 0;
   background-image: linear-gradient(lightpink, hotpink);
+  background: white;
+  border-bottom: solid lightpink .5vw;
 }
 .img-banner{
   width: 100%;
@@ -37,11 +40,11 @@ h1{
   font-family: ;
   font-size: 13vw;
   width: 100vw;
-  color: white;
+  color: lightpink;
   font-weight: 900;
   z-index: 9;
   text-shadow: 1vw 1vw 3vw whit;
-  opacity: .3;
+  opacity: 1;
   text-align: center;
 }
 h2{
@@ -68,7 +71,6 @@ h2{
   animation-name: animalogo;
   animation-duration: 3s;
   z-index: 9;
-  transform: rotate(-20deg)
 }
 @keyframes animalogo{
   25%{
@@ -90,7 +92,7 @@ h2{
   border-radius: 100%;
 }
 #lab-menu{
-  background: lightpink;
+  background: whitesmoke;
   width: 8vw;
   height: 8vw;
   display: block;
@@ -100,6 +102,15 @@ h2{
   border-radius: 1vw;
   z-index: 9;
   border: .4vw solid white;
+}
+.traco{
+  background: lightpink;
+  position: relative;
+  width: 6vw;
+  height: 1vw;
+  margin: 1vw auto;
+  top: .5vw;
+  border-radius: 100vw;
 }
 .menu{
   background: transparent;
@@ -126,7 +137,7 @@ h2{
 }
 #check-menu:checked~.cabecalho{
   transition: .1s;
-  margin-top: 13vw;
+  margin-top: 14vw;
 }
 
 main{
@@ -170,7 +181,7 @@ h3{
   box-shadow: .5vw .5vw 3vw rgba(0,0,0,.3);
   top: 22vw;
   margin: 0;
-  border: solid pink .2vw;
+  border: solid pink .1vw;
 }
 .titulo-categ{
   position: relative;
@@ -203,7 +214,7 @@ h3{
   top: 9vw;
 }
 .link-card{
-  background: #444;
+  background: rgba(0,0,0,.3);
   color: white;
   display: block;
   padding: 2vw;
@@ -242,7 +253,7 @@ h3{
 }
 
 .lab-fechar{
-  background: #444;
+  background: lightpink;
   text-align: center;
   line-height: 8vw;
   width: 8vw;
