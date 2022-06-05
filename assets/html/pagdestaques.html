@@ -16,19 +16,19 @@
   }
       .destaques{
         background: transparent;
-        width: 350vw;
-        height: 100vw;
+        width: 440vw;
+        height: 90vw;
         position: relative;
         display: flex;
         justify-content: space-around;
       }
       .card-destaques{
-        background: pink;
-        width: 78vw;
+        background: lightpink;
+        width: 80vw;
         height: 68vw;
         position: relative;
         border-radius: 2vw;
-        top: 25vw;
+        top: 20vw;
       }
       .img-destaques{
         background: white;
@@ -37,20 +37,20 @@
         object-fit: cover;
         object-position: center;
         border-radius: 2vw 2vw 0 0;
-        transition: .4s;
+        transition: .2s;
       }
       .img-destaques:hover{
         height: 100%;
         z-index: 9;
-        transition: .4s;
+        transition: .2s;
         border-radius: 2vw;
       }
       .nome-produto{
         background: transparent;
         position: absolute;
-        font-size: 1.5rem;
+        font-size: 8vw;
         padding-left: 2vw;
-        top: 35vw;
+        top: 34vw;
         color: white;
       }
       .preco{
@@ -65,12 +65,13 @@
         padding: 1.5vw;
         padding-left: 0;
         font-weight: 900;
+        display: none;
       }
       .link-pedir{
-        background: #444;
+        background: rgba(0,0,0,.5);
         display: block;
         padding: 1vw;
-        width: 38vw;
+        width: 74vw;
         height: 10vw;
         line-height: 10vw;
         position: absolute;
@@ -83,13 +84,13 @@
         border-radius: 1vw;
       }
       #h3-dest{
-       padding-top: 3vw;
+       padding-top: vw;
   padding-left: 0;
   padding-bottom: 1vw;
   background: transparent;
   border-bottom: solid .5vw lightpink;
   width: 92vw;
-  color: white;
+  color: black;
   position: fixed;
   left: 4vw;
       }
@@ -102,28 +103,35 @@
   <section class="destaques">
     <h3 id="h3-dest">Destaques e Promoções</h3>
     <div class="card-destaques">
-      <img class="img-destaques" src="../img/img4.png" alt="" />
-      <p class="nome-produto">Nome do produto</p>
+      <img class="img-destaques" src="../img/t-shirtbasica.jpg" alt="" />
+      <p class="nome-produto">T-shirts básicas</p>
       <p class="preco">R$ 35,00</p>
       <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
     </div>
     <div class="card-destaques">
-      <img class="img-destaques" src="../img/img3.png" alt="" />
-      <p class="nome-produto">Nome do produto</p>
+      <img class="img-destaques" src="../img/t-shirtbranca.jpg" alt="" />
+      <p class="nome-produto">T-shirts brancas</p>
       <p class="preco">R$ 35,00</p>
       <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
     </div>
     <div class="card-destaques">
-      <img class="img-destaques" src="../img/img5.png" alt="" />
-      <p class="nome-produto">Nome do produto</p>
+      <img class="img-destaques" src="../img/vestido.jpg" alt="" />
+      <p class="nome-produto">Vestidos/Conjuntos</p>
       <p class="preco">R$ 35,00</p>
       <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
     </div>
     <div class="card-destaques">
-      <img class="img-destaques" src="../img/img6.png" alt="" />
-      <p class="nome-produto">Nome do produto</p>
+      <img class="img-destaques" src="../img/t-shirtluxo.jpg" alt="" />
+      <p class="nome-produto">T-shirts luxo</p>
       <p class="preco">R$ 35,00</p>
       <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
+    </div>
+    
+    <div class="card-destaques">
+    <img class="img-destaques" src="../img/biblias.jpg" alt="" />
+    <p class="nome-produto">Bíblias e acessórios</p>
+    <p class="preco">R$ 35,00</p>
+    <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
     </div>
   </section>
 </body>
