@@ -4,7 +4,7 @@ body{
   font-size: 5vw;
   font-family: 'roboto';
   user-select: none;
-  background: #444;
+  background: white;
 }
 .cabecalho{
   background: transparent;
@@ -19,31 +19,33 @@ body{
   width: 100%;
   height: 100%;
   top: 0;
-  background: white;
+  background-image: linear-gradient(lightpink, hotpink);
 }
 .img-banner{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
+  display: none;
 }
 h1{
   position: absolute;
   margin: auto;
   background: ;
-  right: 5vw;
-  top: 40vw;
+  right: ;
+  top: 70vw;
   font-family: ;
-  font-size: 21vw;
-  width: ;
+  font-size: 13vw;
+  width: 100vw;
   color: white;
   font-weight: 900;
   z-index: 9;
   text-shadow: 1vw 1vw 3vw whit;
-  opacity: .5;
+  opacity: .3;
+  text-align: center;
 }
 h2{
-  background: red;
+  background: transparent;
   position: absolute;
   width: ;
   font-size: 1rem;
@@ -57,11 +59,10 @@ h2{
 .logo{
   background: white;
   position: relative;
-  margin: ;
-  width: 40vw;
-  height: 40vw;
-  left: 3vw;
-  top: 3vw;
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
+  top: 15vw;
   border-radius: 100%;
   box-shadow: .5vw .5vw 3vw lightgrey;
   animation-name: animalogo;
@@ -89,7 +90,7 @@ h2{
   border-radius: 100%;
 }
 #lab-menu{
-  background: #444;
+  background: lightpink;
   width: 8vw;
   height: 8vw;
   display: block;
@@ -141,7 +142,7 @@ h3{
   background: transparent;
   border-bottom: solid .5vw lightpink;
   width: 92vw;
-  color: white;
+  color: black;
   position: absolute;
 }
 .bloco{
@@ -153,7 +154,7 @@ h3{
   
 }
 #bloco1{
-  height: 45vw;
+  height: 40vw;
   background: ;
 }
 #bloco2{
@@ -162,33 +163,35 @@ h3{
 .lab-rad{
   background: white;
   display: block;
-  width: 19vw;
+  width: 15vw;
   position: relative;
-  height: 18vw;
+  height: 16vw;
   border-radius: 2vw;
   box-shadow: .5vw .5vw 3vw rgba(0,0,0,.3);
-  top: 21vw;
+  top: 22vw;
+  margin: 0;
+  border: solid pink .2vw;
 }
 .titulo-categ{
   position: relative;
   top: 15vw;
   font-weight: 500;
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
   color: lightpink;
 }
-#rad1,#rad2,#rad3,#rad4{
+#rad1,#rad2,#rad3,#rad4,#rad5,#rad6{
   display: none;
 }
 .card{
   background: whitesmoke;
   position: relative;
   width: 100vw;
-  height: 150vw;
+  height: 169vw;
   z-index: 9;
   position: absolute;
   left: -100vw;
-  top: 40vw;
+  top: 39vw;
   transition: .3s;
 }
 .texto-card{
@@ -197,6 +200,7 @@ h3{
   width: 80vw;
   margin: auto;
   padding: 5vw;
+  top: 9vw;
 }
 .link-card{
   background: #444;
@@ -225,6 +229,14 @@ h3{
   background: ;
 }
 #rad4:checked~#card4{
+  transition: .3s;
+  left: 0;
+}
+#rad5:checked~#card5{
+  transition: .3s;
+  left: 0;
+}
+#rad6:checked~#card6 {
   transition: .3s;
   left: 0;
 }
@@ -257,7 +269,7 @@ h3{
   object-fit: cover;
   object-position: center;
   width: 90vw;
-  height: 100vw;
+  height: 110vw;
   position: relative;
   margin: auto;
   display: block;
@@ -281,12 +293,12 @@ h3{
   height: 100vw;
   margin: auto;
   position: relative;
-  
+  top: 10vw;
 }
 .destaques{
-  background: white;
+  background: ;
   width: 80vw;
-  height: 100vw;
+  height: 150vw;
   position: relative;
   display: block;
 }
@@ -296,9 +308,9 @@ h3{
   height: 50vw;
 }
 #bloco-horario{
-  background: #444;
+  background: transparent;
   width: 100vw;
-  height: 60vw;
+  height: 65vw;
 }
 .texto-hora{
   border: solid lightpink .5vw;
@@ -308,27 +320,31 @@ h3{
   text-align: center;
   line-height: 8vw;
   font-size: 1rem;
-  color: white;
-  font-weight: 300;
+  color: black;
+  font-weight: 500;
   position: relative;
-  top: 18vw;
+  top: 20vw;
+  background: transparent;
 }
 #bloco-local{
-  height: 92vw;
-  background: #444;
-  border-top: solid #444 1vw;
+  height: 90vw;
+  background: lightpink;
+}
+#titulo-local{
+  color: black;
+  border-bottom: solid .5vw white;
 }
 .iframe-local{
   width: 98vw;
-  height: 70vw;
+  height: 65vw;
   margin: auto;
   position: relative;
   top: 11vw;
 }
 .rodape{
-  background: #444;
+  background: lightpink;
   width: 100vw;
-  height: 30vw;
+  height: 20vw;
   position: relative;
 }
 .menu-rodape{
@@ -337,7 +353,7 @@ h3{
   height: 10vw;
   position: relative;
   margin: auto;
-  top: 10vw;
+  top: 2vw;
   display: flex;
   justify-content: space-around;
 }
@@ -352,7 +368,7 @@ h3{
   color: white;
   text-align: center;
   position: relative;
-  top: 15vw;
+  top: 5vw;
   margin: auto;
   font-size: 3vw;
 }
