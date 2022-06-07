@@ -1,146 +1,385 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style.css">
-  
-  <style>
-  body{
-    margin: 0;
-    padding: 0;
-    font-family: 'roboto';
-    user-select: none;
-    background: ;
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 5vw;
+  font-family: 'roboto';
+  user-select: none;
+  background: white;
+  font-family: arial;
+}
+.cabecalho{
+  background: white;
+  width: 100vw;
+  height: 90vw;
+  position: relative;
+  margin-top: 0;
+  transition: .1s;
+}
+.banner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(lightpink, hotpink);
+  background: white;
+  border-bottom: solid lightpink .5vw;
+}
+.img-banner{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+}
+h1{
+  position: absolute;
+  margin: auto;
+  background: ;
+  right: ;
+  top: 70vw;
+  font-family: ;
+  font-size: 13vw;
+  width: 100vw;
+  color: lightpink;
+  font-weight: 900;
+  z-index: 9;
+  text-shadow: 1vw 1vw 3vw whit;
+  opacity: 1;
+  text-align: center;
+}
+h2{
+  background: transparent;
+  position: absolute;
+  width: ;
+  font-size: 1rem;
+  left: 37.2vw;
+  top: 48vw;
+  color: lightpink;
+  font-weight: 300;
+  letter-spacing: 1vw;
+  font-weight: 900;
+}
+.logo{
+  background: white;
+  position: relative;
+  margin: auto;
+  width: 50vw;
+  height: 50vw;
+  top: 15vw;
+  border-radius: 100%;
+  box-shadow: .5vw .5vw 3vw lightgrey;
+  animation-name: animalogo;
+  animation-duration: 3s;
+  z-index: 9;
+}
+@keyframes animalogo{
+  25%{
+    
   }
-      .destaques{
-        background: transparent;
-        width: 535vw;
-        height: 90vw;
-        position: relative;
-        display: flex;
-        justify-content: space-around;
-      }
-      .card-destaques{
-        background: lightpink;
-        width: 80vw;
-        height: 68vw;
-        position: relative;
-        border-radius: 2vw;
-        top: 20vw;
-      }
-      .img-destaques{
-        background: white;
-        width: 100%;
-        height: 40vw;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 2vw 2vw 0 0;
-        transition: .2s;
-      }
-      .img-destaques:hover{
-        height: 100%;
-        z-index: 9;
-        transition: .2s;
-        border-radius: 2vw;
-      }
-      .nome-produto{
-        background: transparent;
-        position: absolute;
-        font-size: 8vw;
-        padding-left: 2vw;
-        top: 34vw;
-        color: white;
-      }
-      .preco{
-        background: transparent;
-        position: absolute;
-        font-size: 1.7rem;
-        padding-left: vw;
-        top: 43vw;
-        left: 2vw;
-        text-align: center;
-        color: white;
-        padding: 1.5vw;
-        padding-left: 0;
-        font-weight: 900;
-        display: none;
-      }
-      .link-pedir{
-        background: rgba(0,0,0,.3);
-        display: block;
-        padding: 1vw;
-        width: 74vw;
-        height: 10vw;
-        line-height: 10vw;
-        position: absolute;
-        right: 2vw;
-        top: 54vw;
-        font-size: 1.5rem;
-        text-decoration: none;
-        text-align: center;
-        color: white;
-        border-radius: 1vw;
-      }
-      #h3-dest{
-       padding-top: vw;
+  50%{
+    
+  }
+  75%{
+    
+  }
+  100%{
+    
+  }
+}
+.img-logo{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+#lab-menu{
+  background: whitesmoke;
+  width: 8vw;
+  height: 8vw;
+  display: block;
+  position: absolute;
+  right: 5vw;
+  top: 2vw;
+  border-radius: 1vw;
+  z-index: 9;
+  border: .4vw solid white;
+}
+.traco{
+  background: lightpink;
+  position: relative;
+  width: 6vw;
+  height: 1vw;
+  margin: 1vw auto;
+  top: .5vw;
+  border-radius: 100vw;
+}
+.menu{
+  background: transparent;
+  width: 40vw;
+  height: 10vw;
+  position: absolute;
+  right: 15vw;
+  top: 1.5vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.link-rede{
+  display: block;
+  width: 8vw;
+  height: 8vw;
+  position: relative;
+  top: 1vw;
+  border-radius: 100%;
+  background: whitesmoke;
+  box-shadow: .5vw .5vw 1vw rgba(0, 0, 0, .2);
+}
+#check-menu{
+  display: none;
+}
+#check-menu:checked~.cabecalho{
+  transition: .1s;
+  margin-top: 14vw;
+}
+
+main{
+  background: transparent;
+  width: 100vw;
+  height: vw;
+  position: relative;
+}
+h3{
+  padding-top: 3vw;
   padding-left: 0;
   padding-bottom: 1vw;
   background: transparent;
   border-bottom: solid .5vw lightpink;
   width: 92vw;
   color: black;
-  position: fixed;
-  left: 4vw;
-      }
-  </style>
+  position: absolute;
+}
+.bloco{
+  background: transparent;
+  width: 100vw;
+  height: vw;
+  display: flex;
+  justify-content: space-evenly;
   
-  <title></title>
-</head>
+}
+#bloco1{
+  height: 40vw;
+  background: ;
+}
+#bloco2{
+  height: 100vw;
+}
+.lab-rad{
+  background: white;
+  display: block;
+  width: 15vw;
+  position: relative;
+  height: 16vw;
+  border-radius: 2vw;
+  box-shadow: .5vw .5vw 3vw rgba(0,0,0,.3);
+  top: 22vw;
+  margin: 0;
+  border: solid pink .1vw;
+}
+.titulo-categ{
+  position: relative;
+  top: 15vw;
+  font-weight: 500;
+  font-size: 3vw;
+  text-align: center;
+  color: lightpink;
+}
+#rad1,#rad2,#rad3,#rad4,#rad5,#rad6{
+  display: none;
+}
+.card{
+  background: white;
+  position: relative;
+  width: 100vw;
+  height: 159vw;
+  z-index: 9;
+  position: absolute;
+  left: -100vw;
+  top: 39vw;
+  transition: .3s;
+}
+.texto-card{
+  background: pink;
+  position: relative;
+  width: 80vw;
+  margin: auto;
+  padding: 5vw;
+  top: 9vw;
+}
+.link-card{
+  background: rgba(0,0,0,.3);
+  color: white;
+  display: block;
+  padding: 2vw;
+  position: relative;
+  top: 2vw;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+#rad1:checked~#card1{
+  transition: .3s;
+  left: 0;
+  background: ;
+}
+#rad2:checked~#card2{
+  transition: .3s;
+  left: 0;
+  background: ;
+}
+#rad3:checked~#card3{
+  transition: .3s;
+  left: 0;
+  background: ;
+}
+#rad4:checked~#card4{
+  transition: .3s;
+  left: 0;
+}
+#rad5:checked~#card5{
+  transition: .3s;
+  left: 0;
+}
+#rad6:checked~#card6 {
+  transition: .3s;
+  left: 0;
+}
 
-<body>
-  <section class="destaques">
-    <h3 id="h3-dest">Destaques e Promoções</h3>
-    <div class="card-destaques">
-      <img class="img-destaques" src="../img/t-shirtbasica.jpg" alt="" />
-      <p class="nome-produto">T-shirts básicas</p>
-      <p class="preco">R$ 35,00</p>
-      <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
-    </div>
-    <div class="card-destaques">
-      <img class="img-destaques" src="../img/t-shirtbranca.jpg" alt="" />
-      <p class="nome-produto">T-shirts brancas</p>
-      <p class="preco">R$ 35,00</p>
-      <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
-    </div>
-    <div class="card-destaques">
-      <img class="img-destaques" src="../img/vestido.jpg" alt="" />
-      <p class="nome-produto">Vestidos/Conjuntos</p>
-      <p class="preco">R$ 35,00</p>
-      <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
-    </div>
-    <div class="card-destaques">
-      <img class="img-destaques" src="../img/t-shirtluxo.jpg" alt="" />
-      <p class="nome-produto">T-shirts luxo</p>
-      <p class="preco">R$ 35,00</p>
-      <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
-    </div>
-    
-    <div class="card-destaques">
-    <img class="img-destaques" src="../img/saias.png" alt="" />
-    <p class="nome-produto">Saias longas</p>
-    <p class="preco">R$ 35,00</p>
-    <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
-    </div>
-    
-    <div class="card-destaques">
-    <img class="img-destaques" src="../img/biblias.jpg" alt="" />
-    <p class="nome-produto">Bíblias e acessórios</p>
-    <p class="preco">R$ 35,00</p>
-    <a class="link-pedir" href="https://wa.me/558587224161?text=Olá,%20Adorável%20Closet!" target="_blank">Pedir</a>
-    </div>
-  </section>
-</body>
-
-</html>
+.lab-fechar{
+  background: lightpink;
+  text-align: center;
+  line-height: 8vw;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  right: 7vw;
+  top: 7vw;
+  color: white;
+  font-weight: 500;
+  z-index: 9;
+}
+.img-lab{
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+.img-categ{
+  background: whitesmoke;
+  object-fit: cover;
+  object-position: center;
+  width: 90vw;
+  height: 110vw;
+  position: relative;
+  margin: auto;
+  display: block;
+  top: 5vw;
+  border-radius: 2vw;
+}
+.slide-destaques{
+  background: ;
+  width: 100vw;
+  height: 90vw;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+#fechar-card{
+  display: none;
+}
+.iframe-dest{
+  background: transparent;
+  width: 100vw;
+  height: 100vw;
+  margin: auto;
+  position: relative;
+  top: 10vw;
+}
+.destaques{
+  background: ;
+  width: 80vw;
+  height: 150vw;
+  position: relative;
+  display: block;
+}
+.card-destaques{
+  background: #444;
+  width: 80vw;
+  height: 50vw;
+}
+#bloco-horario{
+  background: transparent;
+  width: 100vw;
+  height: 65vw;
+}
+.texto-hora{
+  border: solid lightpink .5vw;
+  padding: 4vw;
+  height: 25vw;
+  width: 82vw;
+  text-align: center;
+  line-height: 8vw;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  top: 20vw;
+  background: transparent;
+}
+#bloco-local{
+  height: 90vw;
+  background: lightpink;
+}
+#titulo-local{
+  color: black;
+  border-bottom: solid .5vw white;
+}
+.iframe-local{
+  width: 98vw;
+  height: 65vw;
+  margin: auto;
+  position: relative;
+  top: 11vw;
+}
+.rodape{
+  background: lightpink;
+  width: 100vw;
+  height: 20vw;
+  position: relative;
+}
+.menu-rodape{
+  background: transparent;
+  width: 40vw;
+  height: 10vw;
+  position: relative;
+  margin: auto;
+  top: 2vw;
+  display: flex;
+  justify-content: space-around;
+}
+.img-icone{
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  
+}
+.copy{
+  background: transparent;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 5vw;
+  margin: auto;
+  font-size: 3vw;
+}
